@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Blacnchard</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <nav class="nav">
+                <div class="container nav__container">
+                    <div class="header__left">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="header__center">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">О нас</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Галерея</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Каталог</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">События</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Издания</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Проекты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__right">
+                        <a href="#" class="header__right-link">
+                            Войти
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section-hero">
+            <nav class="section-hero__nav">
+                <div class="section-hero__nav-container container">
+                    <div class="section-hero__nav-left">
+                        <ul class="section-hero__dropdown-list">
+                            <li class="section-hero__dropdown-item">
+                                Реализм
+                            </li>
+                            <li class="section-hero__dropdown-item">
+                                Импрессионизм
+                            </li>
+                            <li class="section-hero__dropdown-item">
+                                Постимпрессионизм
+                            </li>
+                            <li class="section-hero__dropdown-item">
+                                Авангард
+                            </li>
+                            <li class="section-hero__dropdown-item">
+                                Футуризм
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section-hero__nav-right">
+                        <span class="section-hero__icon-img"></span>
+                        <input placeholder="Поиск по сайту" type="text" class="section-hero__nav-input">
+                    </div>
+                </div>
+            </nav>
+            <div class="section-hero__text-container container">
+                <h1 class="section-hero__heading">
+                    Прикоснитесь к прекрасному
+                </h1>
+                <p class="section-hero__text">
+                    Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+                </p>
+                <a href="#" class="section-hero__btn">
+                    Подписаться на рассылку
+                </a>
+            </div>
+        </section>
+        <section class="section-about container">
+            <h2 class="section-about__heading">
+                О нас
+            </h2>
+            <p class="section-about__text">
+                Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+            </p>
+        </section>
+        <section class="section-gallery">
+            <div class="container section-gallery__container">
+                <div class="section-gallery__left">
+                    <h2 class="section-gallery__heading">
+                        Галлерея
+                    </h2>
+                    <span class="section-gallery__choices-text">
+                        Фильтры:
+                    </span>
+                    <select name="select" class="select">
+                        <option value="" class="option">Живопись</option>
+                        <option value="" class="option">Рисунок</option>
+                        <option value="" class="option">Скульптура</option>
+                    </select>
+                    <span class="section-gallery__text">
+                        Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="section-gallery__text-link">авторизуйтесь,</a> либо воспользуйтесь лицензией. 
+                    </span>
+                </div>
+                <div class="section-gallery__right">
+                    <!-- Slider main container -->
+                    <div class="swiper swiper_1">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="section-gallery__row">
+                                <img class="section-gallery__row-img" src="img/gallery-pic-1.jpg" alt="">
+                                <img class="section-gallery__row-img" src="img/gallery-pic-2.jpg" alt="">
+                                <img class="section-gallery__row-img" src="img/gallery-pic-3.jpg" alt="">
+                                <img class="section-gallery__row-img" src="img/gallery-pic-4.jpg" alt="">
+                                <img class="section-gallery__row-img" src="img/gallery-pic-5.jpg" alt="">
+                                <img class="section-gallery__row-img" src="img/gallery-pic-6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="section-gallery__row">
+                                <img class="section-gallery__row-img" src="img/gallery-pic-7.jpg" alt="">
+                                <img class="section-gallery__row-img" src="img/gallery-pic-8.jpg" alt="">
+                                <img class="section-gallery__row-img" src="img/gallery-pic-9.jpg" alt="">
+                                <img class="section-gallery__row-img" src="img/gallery-pic-10.jpg" alt="">
+                                <img class="section-gallery__row-img" src="img/gallery-pic-11.jpg" alt="">
+                                <img class="section-gallery__row-img" src="img/gallery-pic-12.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev swiper-button-prev_1"></div>
+                        <div class="swiper-button-next swiper-button-next_1"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-catalogue container">
+            <div class="section-catalogue__heading-block">
+                <h2 class="section-catalogue__heading">
+                    Каталог
+                </h2>
+                <ul class="section-catalogue__flag-list">
+                    <li class="section-catalogue__flag-item fr"></li>
+                    <li class="section-catalogue__flag-item ger"></li>
+                    <li class="section-catalogue__flag-item it"></li>
+                    <li class="section-catalogue__flag-item ru"></li>
+                    <li class="section-catalogue__flag-item bel"></li>
+                </ul>
+            </div>
+            <p class="section-catalogue__text">
+                Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+            </p>
+            <div class="section-catalogue__interactive-block">
+                <div class="section-catalogue__info">
+                    <img class="section-catalogue__info-img" src="img/catalogue-pic.jpg" alt="">
+                    <h3 class="section-catalogue__info-heading">
+                        Доменико Гирландайо
+                    </h3>
+                    <span class="section-catalogue__info-date">
+                        2 июня 1448 — 11 января 1494.
+                    </span>
+                    <p class="section-catalogue__info-text">
+                        Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                    </p>
+                </div>
+                <div id="accordion" class="selector">
+                    <h3>C 1400 по 1499 гг.
+                        <svg class="accordion__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                            <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                        </svg>                            
+                    </h3>
+                    <div>
+                        <div class="authors__list">
+                            <ul class="authors__column">
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Бенедетто ди Биндо</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Бергоньоне, Амброджо</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Биссоло, Франческо</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Больтраффио, Джованни</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Бонсиньори, Франческо</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Боттичини, Рафаэлло</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Брамантино</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Бреа, Людовико</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Бьяджо д’Антонио Туччи</a>
+                                </li>
+                            </ul>
+                            <ul class="authors__column">
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Веккьетта</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Андреа Верроккьо</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Доменико Гирландайо</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Беноццо Гоццоли</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Граначчи, Франческо</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Грегорио ди Чекко</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Джованни да Удине</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Джованни ди Паоло</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Джорджоне</a>
+                                </li>
+                            </ul>
+                            <ul class="authors__column">
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Парентино, Бернардо</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Пезеллино</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Пьетро Перуджино</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Перуцци, Бальдассаре</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Пизанелло</a>
+                                </li>
+                                <li class="authors__item">
+                                    <a class="authors__link" href="#">Пинтуриккьо</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>C 1500 по 1599 гг.
+                        <svg class="accordion__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                            <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                        </svg>
+                    </h3>
+                    <div>
+                        <p>
+                            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                        </p>
+                        <p>
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.
+                        </p>
+                    </div>
+                    <h3>C 1600 по 1699 гг.
+                        <svg class="accordion__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                            <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                        </svg>
+                    </h3>
+                    <div>
+                        <p>
+                            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                        </p>
+                        <p>
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.
+                        </p>
+                    </div>
+                    <h3>C 1700 по 1799 гг.
+                        <svg class="accordion__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                            <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                        </svg>
+                    </h3>
+                    <div>
+                        <p>
+                            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                        </p>
+                        <p>
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.
+                        </p>
+                    </div>
+                    <h3>C 1800 по 1899 гг.
+                        <svg class="accordion__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                            <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                        </svg>
+                    </h3>
+                    <div>
+                        <p>
+                            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                        </p>
+                        <p>
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.
+                        </p>
+                    </div>
+                    <h3>C 1900 по 1999 гг.
+                        <svg class="accordion__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                            <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                        </svg>
+                    </h3>
+                    <div>
+                        <p>
+                            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                        </p>
+                        <p>
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.
+                        </p>
+                    </div>
+                    <h3>C 2000 г.
+                        <svg class="accordion__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                            <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                        </svg>
+                    </h3>
+                    <div>
+                        <p>
+                            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                        </p>
+                        <p>
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.
+                        </p>
+                    </div>
+                  </div>
+            </div>
+            </div>
+        </section>
+        <section class="section-events container">
+            <h2 class="section-events__heading">
+                События
+            </h2>
+            <ul class="section-events__list">
+                <li class="section-events__item">
+                    <div class="section-events__item-content">
+                        <h3 class="section-events__item-heading">
+                            Книжная гравюра в живом восприятии
+                        </h3>
+                        <p class="section-events__item-text">
+                            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
+                        </p>
+                        <a href="#" class="section-events__item-link">
+                            Подробнее
+                        </a>
+                    </div>
+                </li>
+                <li class="section-events__item section-events__bg_2">
+                    <div class="section-events__item-content">
+                        <h3 class="section-events__item-heading">
+                            «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+                        </h3>
+                        <p class="section-events__item-text">
+                            Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.
+                        </p>
+                        <a href="#" class="section-events__item-link">
+                            Подробнее
+                        </a>
+                    </div>
+                </li>
+                <li class="section-events__item section-events__bg_3">
+                    <div class="section-events__item-content">
+                        <h3 class="section-events__item-heading">
+                            Выставка «Формация 2020»
+                        </h3>
+                        <p class="section-events__item-text">
+                            Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.
+                        </p>
+                        <a href="#" class="section-events__item-link">
+                            Подробнее
+                        </a>
+                    </div>
+                </li>
+                <li class="section-events__item section-events__bg_4">
+                    <div class="section-events__item-content">
+                        <h3 class="section-events__item-heading">
+                            XXIV Международная биеннале молодого искусства
+                        </h3>
+                        <p class="section-events__item-text">
+                            Внезапно, реплицированные с зарубежных источников, современные исследования.
+                        </p>
+                        <a href="#" class="section-events__item-link">
+                            Подробнее
+                        </a>
+                    </div>
+                </li>
+                <li class="section-events__item section-events__bg_5">
+                    <div class="section-events__item-content">
+                        <h3 class="section-events__item-heading">
+                            Джон Винзор. Фотографии из серии «Метафора серебра»
+                        </h3>
+                        <p class="section-events__item-text">
+                            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.
+                        </p>
+                        <a href="#" class="section-events__item-link">
+                            Подробнее
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="section-events__btn-container">
+                <button class="section-events__btn">
+                    Все события
+                </button>
+            </div>
+        </section>
+        <section class="section-products">
+            <div class="section-products__conatiner container">
+                <div class="section-products__text-container">
+                    <h2 class="section-products__heading">
+                        Издания
+                    </h2>
+                    <ul class="section-products__checkbox-list">
+                        <li class="section-products__checkbox-item">
+                            <label for="check1" class="section-products__label">
+                                <input type="checkbox" class="section-products__checkbox" id="check1">
+                                <span class="section-products__custom"></span>
+                                Бестселлеры
+                            </label>
+                        </li>
+                        <li class="section-products__checkbox-item">
+                            <label for="check2" class="section-products__label">
+                                <input type="checkbox" class="section-products__checkbox" id="check2">
+                                <span class="section-products__custom"></span>
+                                Искусство
+                            </label>    
+                        </li>
+                        <li class="section-products__checkbox-item">
+                            <label for="check3" class="section-products__label">
+                                <input type="checkbox" class="section-products__checkbox" id="check3">
+                                <span class="section-products__custom"></span>
+                                Архитектура
+                            </label>
+                        </li>
+                        <li class="section-products__checkbox-item">
+                            <label for="check4" class="section-products__label">
+                                <input type="checkbox" class="section-products__checkbox" id="check4">
+                                <span class="section-products__custom"></span>
+                                Дизайн
+                            </label>
+                        </li>
+                        <li class="section-products__checkbox-item">
+                            <label for="check5" class="section-products__label">
+                                <input type="checkbox" class="section-products__checkbox" id="check5">
+                                <span class="section-products__custom"></span>
+                                Мода
+                            </label>
+                        </li>
+                        <li class="section-products__checkbox-item">
+                            <label for="check6" class="section-products__label">
+                                <input type="checkbox" class="section-products__checkbox" id="check6">
+                                <span class="section-products__custom"></span>
+                                Детям
+                            </label>
+                        </li>
+                        <li class="section-products__checkbox-item">
+                            <label for="check7" class="section-products__label">
+                                <input type="checkbox" class="section-products__checkbox" id="check7">
+                                <span class="section-products__custom"></span>
+                                Художественная литература
+                            </label>
+                        </li>
+                        <li class="section-products__checkbox-item">
+                            <label for="check8" class="section-products__label">
+                                <input type="checkbox" class="section-products__checkbox" id="check8">
+                                <span class="section-products__custom"></span>
+                                Публицистика
+                            </label>
+                        </li>
+                        <li class="section-products__checkbox-item">
+                            <label for="check9" class="section-products__label">
+                                <input type="checkbox" class="section-products__checkbox" id="check9">
+                                <span class="section-products__custom"></span>
+                                Путеводители
+                            </label>
+                        </li>
+                        <li class="section-products__checkbox-item">
+                            <label for="check10" class="section-products__label">
+                                <input type="checkbox" class="section-products__checkbox" id="check10">
+                                <span class="section-products__custom"></span>
+                                Философия
+                            </label>
+                        </li>
+                        <li class="section-products__checkbox-item">
+                            <label for="check11" class="section-products__label">
+                                <input type="checkbox" class="section-products__checkbox" id="check11">
+                                <span class="section-products__custom"></span>
+                                Учебная литература
+                            </label>
+                        </li>
+                        <li class="section-products__checkbox-item">
+                            <label for="check12" class="section-products__label">
+                                <input type="checkbox" class="section-products__checkbox" id="check12">
+                                <span class="section-products__custom"></span>
+                                Журналы и газеты
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section-products__slider">
+                    <!-- Slider main container -->
+                    <div class="swiper swiper_1 swiper-products">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <ul class="section-products__list">
+                                <li class="section-products__item">
+                                    <div class="section-products__item-container">
+                                        <div class="section-products__item-left">
+                                            <h3 class="section-products__item-heading">
+                                                Исскуство цвета
+                                            </h3>
+                                            <span class="section-products__item-author">
+                                                Иттен Иоханнес
+                                            </span>
+                                        </div>
+                                        <div class="section-products__item-right">
+                                            <span class="section-products__item-price">
+                                                620 руб
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="section-products__item-btn">
+                                        Заказать
+                                    </a>
+                                </li>
+                                <li class="section-products__item item-bg-2">
+                                    <div class="section-products__item-container">
+                                        <div class="section-products__item-left">
+                                            <h3 class="section-products__item-heading">
+                                                Типографика
+                                            </h3>
+                                            <span class="section-products__item-author">
+                                                Рудер, Эмиль
+                                            </span>
+                                        </div>
+                                        <div class="section-products__item-right">
+                                            <span class="section-products__item-price">
+                                                2450 руб
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="section-products__item-btn">
+                                        Заказать
+                                    </a>
+                                </li>
+                                <li class="section-products__item item-bg-3">
+                                    <div class="section-products__item-container">
+                                        <div class="section-products__item-left">
+                                            <h3 class="section-products__item-heading">
+                                                Книга про буквы
+                                            </h3>
+                                            <span class="section-products__item-author">
+                                                Гордон, Юрий 
+                                            </span>
+                                        </div>
+                                        <div class="section-products__item-right">
+                                            <span class="section-products__item-price">
+                                                2200 руб
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="section-products__item-btn">
+                                        Заказать
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="section-products__list">
+                                <li class="section-products__item item-bg-4">
+                                    <div class="section-products__item-container">
+                                        <div class="section-products__item-left">
+                                            <h3 class="section-products__item-heading">
+                                                Николай Ильин
+                                            </h3>
+                                            <span class="section-products__item-author">
+                                                Кричевский, Владимир 
+                                            </span>
+                                        </div>
+                                        <div class="section-products__item-right">
+                                            <span class="section-products__item-price">
+                                                1100 руб
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="section-products__item-btn">
+                                        Заказать
+                                    </a>
+                                </li>
+                                <li class="section-products__item item-bg-5">
+                                    <div class="section-products__item-container">
+                                        <div class="section-products__item-left">
+                                            <h3 class="section-products__item-heading">
+                                                Модульные сетки в граф...
+                                            </h3>
+                                            <span class="section-products__item-author">
+                                                Мюллер-Брокманн, Йозеф 
+                                            </span>
+                                        </div>
+                                        <div class="section-products__item-right">
+                                            <span class="section-products__item-price">
+                                                1450 руб
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="section-products__item-btn">
+                                        Заказать
+                                    </a>
+                                </li>
+                                <li class="section-products__item item-bg-6">
+                                    <div class="section-products__item-container">
+                                        <div class="section-products__item-left">
+                                            <h3 class="section-products__item-heading">
+                                                Эволюция графических ст...
+                                            </h3>
+                                            <span class="section-products__item-author">
+                                                Хеллер, Чваст
+                                            </span>
+                                        </div>
+                                        <div class="section-products__item-right">
+                                            <span class="section-products__item-price">
+                                                3200 руб
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="section-products__item-btn">
+                                        Заказать
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="section-products__list">
+                                <li class="section-products__item item-bg-7">
+                                    <div class="section-products__item-container">
+                                        <div class="section-products__item-left">
+                                            <h3 class="section-products__item-heading">
+                                                Искусство и визуальное в...
+                                            </h3>
+                                            <span class="section-products__item-author">
+                                                Арнхейм, Рудольф
+                                            </span>
+                                        </div>
+                                        <div class="section-products__item-right">
+                                            <span class="section-products__item-price">
+                                                2200 руб
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="section-products__item-btn">
+                                        Заказать
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination swiper-pagination__products"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev swiper-button-prev_1"></div>
+                        <div class="swiper-button-next swiper-button-next_1"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="section-projects container">
+            <h2 class="section-projects__heading">
+                Проекты
+            </h2>
+            <p class="section-projects__text">
+                Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское      обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых      предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="#" class="section-projects__text-link">blanchard-art.ru/projects/about</a>
+            </p>
+            <h3 class="section-projects__heading-swiper">
+                Партнёры проектов:
+            </h3>
+            <div class="section-projects__slider">
+                <!-- Slider main container -->
+                <div class="swiper swiper-projects">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper swiper-wrapper-projects">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <ul class="section-projects__list">
+                            <img class="section-projects__item" src="img/project-bg-1.png" alt="">
+                            <img class="section-projects__item" src="img/project-bg-2.png" alt="">
+                            <img class="section-projects__item" src="img/project-bg-3.png" alt="">
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="section-projects__item" src="img/project-bg-4.png" alt="">
+                        <img class="section-projects__item" src="img/project-bg-5.png" alt="">
+                        <img class="section-projects__item" src="img/project-bg-6.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="section-projects__item" src="img/project-bg-7.png" alt="">
+                        <img class="section-projects__item" src="img/project-bg-8.png" alt="">
+                        <img class="section-projects__item" src="img/project-bg-9.png" alt="">
+                    </div>
+                    
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-button-prev-2"></div>
+                    <div class="swiper-button-next swiper-button-next-2"></div>
+                
+                </div>
+                
+            </div>
+        </section>
+        <section class="section-contacts">
+            <h2 class="section-contacts__heading container">
+                Контакты
+            </h2>
+            <div class="section-contacts__block">
+                <div class="section-contacts__form-area">
+                    <h3 class="section-contacts__form-heading">
+                        Шоурум №4
+                    </h3>
+                    <span class="section-contacts__form-text">
+                        Леонтьевский переулок, дом 5/1
+                    </span>
+                    <h3 class="section-contacts__form-title">
+                        Заказать обратный звонок
+                    </h3>
+                    <form>
+                        <input type="text" placeholder="Имя" class="section-contacts__form-name">
+                        <input type="text" placeholder="Телефон" class="section-contacts__form-phone">
+                        <button class="section-contacts__form-btn">Заказать</button>
+                    </form>
+                    <p class="section-contacts__text">Связаться в один клик</p>
+                    <ul class="section-contacts__social-list">
+                        <li class="section-contacts__list-item">
+                            <a href="#" class="section-contacts__social-link tg"></a>
+                        </li>
+                        <li class="section-contacts__list-item">
+                            <a href="#" class="section-contacts__social-link whatsapp"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section-contacts__map">
+                    <div id="map" class="section-contacts__map-object"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__left">
+                <a class="footer__logo-link">
+                    <img class="footer__logo" src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="footer__right">
+                <ul class="footer__right-social">
+                    <li class="footer__right-item">
+                        <a href="#" class="footer__right-icon vk" aria-label="вконтакте"></a>
+                    </li>
+                    <li class="footer__right-item">
+                        <a href="#" class="footer__right-icon inst" aria-label="инстаграм"></a>
+                    </li>
+                    <li class="footer__right-item">
+                        <a href="#" class="footer__right-icon fb" aria-label="фейсбук"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="js/choices.min.js" defer></script>
+    <script src="js/select.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/accordion.js" defer></script>
+    <script src="js/map.js" defer></script>
+</body>
+</html>
